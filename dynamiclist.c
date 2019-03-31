@@ -10,7 +10,7 @@ int main() {
   List zeroitem;			// Declare static memory for first item
   zeroitem.value = 0;                   // Give it a default value
   List *lastitem = &zeroitem;           // Declare a pointer to the last item
-  lastitem->next = NULL;                // Last item is firt item, no next item
+  lastitem->next = NULL;                // Last item is first item, no next item
   while (1) {
     int number = -1;
     printf("Number: ");			// Display a prompt
