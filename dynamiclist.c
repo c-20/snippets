@@ -9,10 +9,10 @@ typedef struct _List {			// structure _List..
 int main() {
   List zeroitem;			// Declare static memory for first item
   zeroitem.value = 0;                   // Give it a default value
-  List *lastitem = &zeroitem;           // Declare a pointer to the last item
+  List *lastitem = &zeroitem;           // Declare a pointer to the last item's address
   lastitem->next = NULL;                // Last item is first item, no next item
-  while (1) {
-    int number = -1;
+  while (1) {                           // ^ same as (*lastitem).next = NULL;
+    int number = -1;                    //   where * means dereference address to value
     printf("Number: ");			// Display a prompt
     scanf("%d", &number);		// Read a number
     if (number < 0) {
