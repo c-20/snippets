@@ -1,5 +1,5 @@
 #include <stdio.h>			// stdio: printf(), scanf()
-#include <stdlib.h>                     // stdlib: malloc()
+#include <stdlib.h>                     // stdlib: malloc(), free()
 
 typedef struct _List {			// structure _List..
     int value;				//   with value [int]
